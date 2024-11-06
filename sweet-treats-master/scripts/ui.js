@@ -4,7 +4,7 @@ import { getCurrentUser } from "/sweet-treats-master/scripts/auth.js";
 // Define navigation items
 const navItems = {
   loggedOut: [
-    { href: "/sweet-treats-master/index.html", text: "Trang chủ" },
+    { href: "/sweet-treats-master/pages/index.html.html", text: "Trang chủ" },
     { href: "/sweet-treats-master/pages/shop.html", text: "Cửa hàng" },
     { href: "/sweet-treats-master/pages/about.html", text: "Giới thiệu" },
     { href: "/sweet-treats-master/pages/sitemap.html", text: "Sitemap" },
@@ -12,7 +12,7 @@ const navItems = {
     { href: "/sweet-treats-master/pages/sign-up.html", text: "Đăng ký" },
   ],
   loggedIn: [
-    { href: "/sweet-treats-master/index.html", text: "Trang chủ" },
+    { href: "/sweet-treats-master/pages/index.html.html", text: "Trang chủ" },
     { href: "/sweet-treats-master/pages/shop.html", text: "Cửa hàng" },
     { href: "/sweet-treats-master/pages/about.html", text: "Giới thiệu" },
     { href: "/sweet-treats-master/pages/sitemap.html", text: "Sitemap" },

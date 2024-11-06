@@ -65,7 +65,7 @@ function handleSignIn(e) {
 
     // Add delay before redirecting
     setTimeout(() => {
-      window.location.href = "/sweet-treats-master/index.html";
+      window.location.href = "/sweet-treats-master/pages/index.html.html";
     }, 2000); // Delay for 2 seconds
   } else {
     showMessage(
@@ -182,7 +182,7 @@ export function logout() {
   localStorage.removeItem("isLoggedIn");
   localStorage.removeItem("currentUser");
   localStorage.removeItem("rememberMe");
-  window.location.href = "/sweet-treats-master/index.html";
+  window.location.href = "/sweet-treats-master/pages/index.html.html";
 }
 
 // Check login status and update UI accordingly
