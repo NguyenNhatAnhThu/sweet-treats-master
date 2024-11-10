@@ -4,7 +4,7 @@ import { getCurrentUser } from "./auth.js";
 // Define navigation items
 const navItems = {
   loggedOut: [
-    { href: "../index.html", text: "Trang chủ" },
+    { href: "/index.html", text: "Trang chủ" },
     { href: "../pages/shop.html", text: "Cửa hàng" },
     { href: "../pages/about.html", text: "Giới thiệu" },
     { href: "../pages/sitemap.html", text: "Sitemap" },
