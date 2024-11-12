@@ -1,7 +1,7 @@
-@import "base.css";
-@import "components.css";
-@import "responsive.css";
-@import "../assets/font-awesome/css/all.min.css";
+@import "/sweet-treats-master/styles/base.css";
+@import "/sweet-treats-master/styles/components.css";
+@import "/sweet-treats-master/styles/responsive.css";
+@import "/sweet-treats-master/assets/font-awesome/css/all.min.css";
 
 /* App Bar */
 .app-bar {
@@ -480,4 +480,12 @@ footer {
 .product-item img {
   width: 100%;
   height: auto;
+}
+
+.mauDo {
+  color: red;
+}
+
+.mauXanh {
+  color: green;
 }

@@ -4,313 +4,312 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cửa hàng - Sweet Treats</title>
-    <link rel="stylesheet" href="../styles/styles.css" />
-    <link rel="stylesheet" href="../styles/responsive.css" />
+    <link rel="stylesheet" href="/sweet-treats-master/styles/styles.css" />
+    <link rel="stylesheet" href="/sweet-treats-master/styles/responsive.css" />
     <style>
-      .faq-container {
-       width: 100%;
-       padding: 20px;
-       box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-       border-radius: 8px;
-     }
-   
-     .faq-container h2 {
-         text-align: left;
-         font-size: 24px;
-     }
-     
-     .faq-container p {
-         color: #666;
-         font-size: 16px;
-     }
-     
-     .accordion-item {
-         border-top: 1px solid #ddd;
-     }
-     
-     .accordion-button {
-         width: 100%;
-         background: none;
-         border: none;
-         outline: none;
-         text-align: left;
-         padding: 15px;
-         font-size: 16px;
-         cursor: pointer;
-         color: #333;
-         font-weight: bold;
-         transition: background-color 0.2s;
-     }
-     
-     .accordion-button:hover {
-         background-color: #f0f0f0;
-     }
-     
-     .accordion-content {
-         padding: 15px;
-         display: none;
-         font-size: 15px;
-         color: #555;
-     }
-     
-     .accordion-content p {
-         margin: 0;
-     }
-     
-     a {
-         color: #007bff;
-         text-decoration: none;
-     }
-   </style>
- </head>
- <body>
-   <header class="app-bar">
-     <div class="container">
-       <h1 class="app-bar-title">Sweet Treats</h1>
-       <nav>
-         <button class="menu-toggle" aria-label="Toggle menu">
-           <i class="fa-solid fa-bars"></i>
-         </button>
-         <ul class="nav-menu"></ul>
-       </nav>
-     </div>
-   </header>
+       .faq-container {
+        width: 100%;
+        padding: 20px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+      }
+    
+      .faq-container h2 {
+          text-align: left;
+          font-size: 24px;
+      }
+      
+      .faq-container p {
+          color: #666;
+          font-size: 16px;
+      }
+      
+      .accordion-item {
+          border-top: 1px solid #ddd;
+      }
+      
+      .accordion-button {
+          width: 100%;
+          background: none;
+          border: none;
+          outline: none;
+          text-align: left;
+          padding: 15px;
+          font-size: 16px;
+          cursor: pointer;
+          color: #333;
+          font-weight: bold;
+          transition: background-color 0.2s;
+      }
+      
+      .accordion-button:hover {
+          background-color: #f0f0f0;
+      }
+      
+      .accordion-content {
+          padding: 15px;
+          display: none;
+          font-size: 15px;
+          color: #555;
+      }
+      
+      .accordion-content p {
+          margin: 0;
+      }
+      
+      a {
+          color: #007bff;
+          text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="app-bar">
+      <div class="container">
+        <h1 class="app-bar-title">Sweet Treats</h1>
+        <nav>
+          <button class="menu-toggle" aria-label="Toggle menu">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+          <ul class="nav-menu"></ul>
+        </nav>
+      </div>
+    </header>
 
-   <main>
-     <section class="products">
-       <div class="container">
-         <div class="search-bar">
-           <input
-             type="text"
-             id="search-input"
-             placeholder="Tìm kiếm sản phẩm..."
-           />
-         </div>
+    <main>
+      <section class="products">
+        <div class="container">
+          <div class="search-bar">
+            <input
+              type="text"
+              id="search-input"
+              placeholder="Tìm kiếm sản phẩm..."
+            />
+          </div>
 
-         <div class="filters">
-           <select id="category-filter">
-             <option value="">Tất cả danh mục</option>
-             <option value="banh-kem">Nhân xoài, lá dứa, phô mai</option>
-             <option value="banh-quy">Dừa, xoài, chanh leo</option>
-             <option value="keo">Nhân cà phê, cốt dừa</option>
-             <option value="chocolate">Nhân trà earlgrey, cam, sô-cô-la</option>
-           </select>
-           <select id="price-filter">
-             <option value="">Tất cả giá</option>
-             <option value="0-50000">500.000đ - 600.000đ</option>
-             <option value="50000-100000">600.000đ - 700.000đ</option>
-             <option value="100000-200000">700.000đ - 800.000đ</option>
-             <option value="200000-">Trên 800.000đ</option>
-           </select>
-           <select id="sort-option">
-             <option value="name-asc">Tên A-Z</option>
-             <option value="name-desc">Tên Z-A</option>
-             <option value="price-asc">Giá tăng dần</option>
-             <option value="price-desc">Giá giảm dần</option>
-           </select>
-           <a href="#" id="clear-filters">Xóa bộ lọc</a>
-         </div>
+          <div class="filters">
+            <select id="category-filter">
+              <option value="">Tất cả danh mục</option>
+              <option value="banh-kem">Nhân xoài, lá dứa, phô mai</option>
+              <option value="banh-quy">Dừa, xoài, chanh leo</option>
+              <option value="keo">Nhân cà phê, cốt dừa</option>
+              <option value="chocolate">Nhân trà earlgrey, cam, sô-cô-la</option>
+            </select>
+            <select id="price-filter">
+              <option value="">Tất cả giá</option>
+              <option value="0-50000">500.000đ - 600.000đ</option>
+              <option value="50000-100000">600.000đ - 700.000đ</option>
+              <option value="100000-200000">700.000đ - 800.000đ</option>
+              <option value="200000-">Trên 800.000đ</option>
+            </select>
+            <select id="sort-option">
+              <option value="name-asc">Tên A-Z</option>
+              <option value="name-desc">Tên Z-A</option>
+              <option value="price-asc">Giá tăng dần</option>
+              <option value="price-desc">Giá giảm dần</option>
+            </select>
+            <a href="#" id="clear-filters">Xóa bộ lọc</a>
+          </div>
 
-         <div id="product-list" class="product-grid"></div>
+          <div id="product-list" class="product-grid"></div>
 
-         <div class="pagination" id="pagination">
-           <!-- Pagination buttons will be added here dynamically -->
-         </div>
-       </div>
-     </section>
+          <div class="pagination" id="pagination">
+            <!-- Pagination buttons will be added here dynamically -->
+          </div>
+        </div>
+      </section>
 
-     <h2 class="section-title">Các câu hỏi thường gặp</h2>
-     <section class="hero" style="background-color: rgb(253,247,255); margin-top: -100px;">
-       <div class="container">
-         <div class="hero-content">
-           <div class="faq-container" style="display: flex;">
-             <h2 style="width: 20%;">Về giao hàng</h2>
-             <div class="accordion" style="width: 80%;">
-                 <div class="accordion-item">
-                   <button class="accordion-button">Phí giao hàng của Sweet Treats được tính như thế nào?</button>
-                   <div class="accordion-content">
-                       <p>Chi tiết về phí giao hàng sẽ phụ thuộc vào khoảng cách và khu vực. Vui lòng liên hệ để biết thêm thông tin.</p>
-                   </div>
-                 </div>
+      <h2 class="section-title">Các câu hỏi thường gặp</h2>
+      <section class="hero" style="background-color: rgb(253,247,255); margin-top: -100px;">
+        <div class="container">
+          <div class="hero-content">
+            <div class="faq-container" style="display: flex;">
+              <h2 style="width: 20%;">Về giao hàng</h2>
+              <div class="accordion" style="width: 80%;">
+                  <div class="accordion-item">
+                    <button class="accordion-button">Phí giao hàng của Sweet Treats được tính như thế nào?</button>
+                    <div class="accordion-content">
+                        <p>Chi tiết về phí giao hàng sẽ phụ thuộc vào khoảng cách và khu vực. Vui lòng liên hệ để biết thêm thông tin.</p>
+                    </div>
+                  </div>
 
-                 <div class="accordion-item">
-                     <button class="accordion-button">Tôi có thể chọn giờ giao hàng không?</button>
-                     <div class="accordion-content">
-                         <p>
-                           Bạn có thể chọn một trong các khung giờ sau: từ 11h30-13h, 13h-15h, 15h-17h hoặc 18h-20h.
-                         </p>
-                     </div>
-                 </div>
-         
-                 <div class="accordion-item">
-                     <button class="accordion-button">Tôi có thể chọn giờ giao hàng chính xác tuyệt đối (ví dụ 12h15) thay vì chọn khung giờ như trên không?</button>
-                     <div class="accordion-content">
-                         <p>Xin lỗi, hiện tại chúng tôi chỉ có thể giao theo khung giờ mà không thể hẹn bạn chính xác đến từng phút, bởi shipper có thể cần thời gian sắp xếp tuyến đường hợp lý để đảm bảo chất lượng bánh tốt nhất khi đến tay khách hàng.</p>
-                     </div>
-                 </div>
-               </div>
-             </div>
-           </div>
-         </div>
-       </div>
-     </section>
-     <section class="hero" style="background-color: rgb(253,247,255); margin-top: -200px;">
-       <div class="container">
-         <div class="hero-content">
-           <div class="faq-container" style="display: flex;">
-             <h2 style="width: 20%;">Về đặt hàng</h2>
-             <div class="accordion" style="width: 80%;">
-                 <div class="accordion-item">
-                   <button class="accordion-button">Ngoài website thì tôi có thể đặt hàng bằng cách khác không?</button>
-                   <div class="accordion-content">
-                       <p>Bạn có thể đặt bánh qua các hình thức sau: </p>
-                       <p>Fanpage – Instagram – Hotline – Zalo: <a href="#">0971 757 513</a></p>
-                   </div>
-                 </div>
+                  <div class="accordion-item">
+                      <button class="accordion-button">Tôi có thể chọn giờ giao hàng không?</button>
+                      <div class="accordion-content">
+                          <p>
+                            Bạn có thể chọn một trong các khung giờ sau: từ 11h30-13h, 13h-15h, 15h-17h hoặc 18h-20h.
+                          </p>
+                      </div>
+                  </div>
+          
+                  <div class="accordion-item">
+                      <button class="accordion-button">Tôi có thể chọn giờ giao hàng chính xác tuyệt đối (ví dụ 12h15) thay vì chọn khung giờ như trên không?</button>
+                      <div class="accordion-content">
+                          <p>Xin lỗi, hiện tại chúng tôi chỉ có thể giao theo khung giờ mà không thể hẹn bạn chính xác đến từng phút, bởi shipper có thể cần thời gian sắp xếp tuyến đường hợp lý để đảm bảo chất lượng bánh tốt nhất khi đến tay khách hàng.</p>
+                      </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="hero" style="background-color: rgb(253,247,255); margin-top: -200px;">
+        <div class="container">
+          <div class="hero-content">
+            <div class="faq-container" style="display: flex;">
+              <h2 style="width: 20%;">Về đặt hàng</h2>
+              <div class="accordion" style="width: 80%;">
+                  <div class="accordion-item">
+                    <button class="accordion-button">Ngoài website thì tôi có thể đặt hàng bằng cách khác không?</button>
+                    <div class="accordion-content">
+                        <p>Bạn có thể đặt bánh qua các hình thức sau: </p>
+                        <p>Fanpage – Instagram – Hotline – Zalo: <a href="#">0971 757 513</a></p>
+                    </div>
+                  </div>
 
-                 <div class="accordion-item">
-                     <button class="accordion-button">Thời gian đặt bánh trước tối thiểu là bao lâu?</button>
-                     <div class="accordion-content">
-                         <p>Bạn nên đặt trước 1 ngày để có thể lựa chọn tất cả các mẫu bánh.</p>
+                  <div class="accordion-item">
+                      <button class="accordion-button">Thời gian đặt bánh trước tối thiểu là bao lâu?</button>
+                      <div class="accordion-content">
+                          <p>Bạn nên đặt trước 1 ngày để có thể lựa chọn tất cả các mẫu bánh.</p>
 
-                         <p>Nếu bạn cần đặt gấp trong ngày, vui lòng liên hệ hotline <a href="#">0971 757 513</a> để được phục vụ ngay, tuy nhiên mẫu bánh có thể hạn chế và không đủ toàn bộ mẫu.</p>
-                     </div>
-                 </div>
-         
-                 <div class="accordion-item">
-                     <button class="accordion-button">Tôi có thể đến mua bánh trực tiếp tại xưởng của Sweet Treats không?</button>
-                     <div class="accordion-content">
-                         <p>Chúng tôi không bán sản phẩm có sẵn và không bán trực tiếp tại xưởng. Do đặc thù sản phẩm bánh lạnh cao cấp rất khó bảo quản trong quá trình giao hàng nên hãy để các shipper chuyên nghiệp của chúng tôi giao hàng đến tận tay bạn để đảm bảo bánh luôn có được chất lượng tốt nhất.</p>
-                     </div>
-                 </div>
+                          <p>Nếu bạn cần đặt gấp trong ngày, vui lòng liên hệ hotline <a href="#">0971 757 513</a> để được phục vụ ngay, tuy nhiên mẫu bánh có thể hạn chế và không đủ toàn bộ mẫu.</p>
+                      </div>
+                  </div>
+          
+                  <div class="accordion-item">
+                      <button class="accordion-button">Tôi có thể đến mua bánh trực tiếp tại xưởng của Sweet Treats không?</button>
+                      <div class="accordion-content">
+                          <p>Chúng tôi không bán sản phẩm có sẵn và không bán trực tiếp tại xưởng. Do đặc thù sản phẩm bánh lạnh cao cấp rất khó bảo quản trong quá trình giao hàng nên hãy để các shipper chuyên nghiệp của chúng tôi giao hàng đến tận tay bạn để đảm bảo bánh luôn có được chất lượng tốt nhất.</p>
+                      </div>
+                  </div>
 
-                 <div class="accordion-item">
-                   <button class="accordion-button">Sweet Treats có các hình thức thanh toán nào?</button>
-                   <div class="accordion-content">
-                       <p>Hiện tại đối với cách đặt hàng qua website, Sweet Treats chỉ có hình thức thanh toán duy nhất là chuyển khoản 100% giá trị đơn hàng ngay khi đặt hàng.</p>
+                  <div class="accordion-item">
+                    <button class="accordion-button">Sweet Treats có các hình thức thanh toán nào?</button>
+                    <div class="accordion-content">
+                        <p>Hiện tại đối với cách đặt hàng qua website, Sweet Treats chỉ có hình thức thanh toán duy nhất là chuyển khoản 100% giá trị đơn hàng ngay khi đặt hàng.</p>
 
-                       <p>Nếu bạn chỉ muốn đặt cọc 50% và thanh toán nốt 50% còn lại khi nhận bánh, vui lòng liên hệ <a href="#">0971 757 513</a>để đặt hàng.</p>
-                   </div>
-                 </div>
+                        <p>Nếu bạn chỉ muốn đặt cọc 50% và thanh toán nốt 50% còn lại khi nhận bánh, vui lòng liên hệ <a href="#">0971 757 513</a>để đặt hàng.</p>
+                    </div>
+                  </div>
 
-                 <div class="accordion-item">
-                   <button class="accordion-button">Tôi có thể huỷ đơn hàng sau khi đã thanh toán tiền bánh không?</button>
-                   <div class="accordion-content">
-                       <p>Nếu bạn muốn huỷ đơn hàng, vui lòng liên hệ trước với chúng tôi ít nhất 24h. Tiền bánh sẽ được chúng tôi bảo lưu lại và trừ vào lần đặt hàng tiếp theo của bạn. Nếu bạn liên hệ với chúng tôi muộn hơn 24h, lúc này đơn hàng của bạn đã được sản xuất vì vậy rất tiếc chúng tôi sẽ không thể hỗ trợ bạn huỷ đơn hàng.</p>
-                   </div>
-                 </div>
-               </div>
-             </div>
-           </div>
-         </div>
-       </div>
-     </section>
-     <section class="hero" style="background-color: rgb(253,247,255); margin-top: -200px;">
-       <div class="container">
-         <div class="hero-content">
-           <div class="faq-container" style="display: flex;">
-             <h2 style="width: 20%;">Về sản phẩm</h2>
-             <div class="accordion" style="width: 80%;">
-                 <div class="accordion-item">
-                   <button class="accordion-button">Cách bảo quản các loại bánh thế nào? Thời hạn sử dụng là bao lâu?</button>
-                   <div class="accordion-content">
-                       <p>Tất cả các loại bánh của chúng tôi hoàn toàn sử dụng nguyên liệu tươi và không sử dụng chất bảo quản, vì vậy vui lòng giữ bánh trong hộp kín & bảo quản ngăn mát tủ lạnh ngay khi bạn nhận bánh (không để bánh vào ngăn đông). Bạn không nên để bánh ở nhiệt độ phòng quá 30 phút (bánh sẽ bị chảy), chỉ lấy bánh ra khỏi ngăn mát tủ lạnh ngay trước khi ăn.</p>
+                  <div class="accordion-item">
+                    <button class="accordion-button">Tôi có thể huỷ đơn hàng sau khi đã thanh toán tiền bánh không?</button>
+                    <div class="accordion-content">
+                        <p>Nếu bạn muốn huỷ đơn hàng, vui lòng liên hệ trước với chúng tôi ít nhất 24h. Tiền bánh sẽ được chúng tôi bảo lưu lại và trừ vào lần đặt hàng tiếp theo của bạn. Nếu bạn liên hệ với chúng tôi muộn hơn 24h, lúc này đơn hàng của bạn đã được sản xuất vì vậy rất tiếc chúng tôi sẽ không thể hỗ trợ bạn huỷ đơn hàng.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="hero" style="background-color: rgb(253,247,255); margin-top: -200px;">
+        <div class="container">
+          <div class="hero-content">
+            <div class="faq-container" style="display: flex;">
+              <h2 style="width: 20%;">Về sản phẩm</h2>
+              <div class="accordion" style="width: 80%;">
+                  <div class="accordion-item">
+                    <button class="accordion-button">Cách bảo quản các loại bánh thế nào? Thời hạn sử dụng là bao lâu?</button>
+                    <div class="accordion-content">
+                        <p>Tất cả các loại bánh của chúng tôi hoàn toàn sử dụng nguyên liệu tươi và không sử dụng chất bảo quản, vì vậy vui lòng giữ bánh trong hộp kín & bảo quản ngăn mát tủ lạnh ngay khi bạn nhận bánh (không để bánh vào ngăn đông). Bạn không nên để bánh ở nhiệt độ phòng quá 30 phút (bánh sẽ bị chảy), chỉ lấy bánh ra khỏi ngăn mát tủ lạnh ngay trước khi ăn.</p>
 
-                       </p>Bánh được bảo quản đúng cách có thể sử dụng trong vòng 3 ngày.</p>
-                   </div>
-                 </div>
+                        </p>Bánh được bảo quản đúng cách có thể sử dụng trong vòng 3 ngày.</p>
+                    </div>
+                  </div>
 
-                 <div class="accordion-item">
-                     <button class="accordion-button">Tôi có thể đặt bánh theo mẫu riêng mà tôi muốn được không?</button>
-                     <div class="accordion-content">
-                         <p>
-                           Rất tiếc, chúng tôi chỉ sản xuất các mẫu có sẵn và không nhận đặt theo mẫu riêng.
-                         </p>
-                     </div>
-                 </div>
-         
-                 <div class="accordion-item">
-                     <button class="accordion-button">Tôi muốn di chuyển bánh từ nơi này đến nơi khác bằng xe máy/ ô tô thì có sợ bánh bị chảy không?</button>
-                     <div class="accordion-content">
-                         <p>Bạn có thể di chuyển bánh bằng ô tô trong thời gian dưới 45 phút (với điều kiện máy lạnh trên xe mở ở mức lạnh sâu).</p>
+                  <div class="accordion-item">
+                      <button class="accordion-button">Tôi có thể đặt bánh theo mẫu riêng mà tôi muốn được không?</button>
+                      <div class="accordion-content">
+                          <p>
+                            Rất tiếc, chúng tôi chỉ sản xuất các mẫu có sẵn và không nhận đặt theo mẫu riêng.
+                          </p>
+                      </div>
+                  </div>
+          
+                  <div class="accordion-item">
+                      <button class="accordion-button">Tôi muốn di chuyển bánh từ nơi này đến nơi khác bằng xe máy/ ô tô thì có sợ bánh bị chảy không?</button>
+                      <div class="accordion-content">
+                          <p>Bạn có thể di chuyển bánh bằng ô tô trong thời gian dưới 45 phút (với điều kiện máy lạnh trên xe mở ở mức lạnh sâu).</p>
 
-                         <p>Nếu bạn di chuyển bằng xe máy thì quãng đường không nên dài quá 30 phút và thời tiết ngoài trời không vượt mức 30 °C (quá nóng bánh sẽ bị chảy), tốt nhất nên di chuyển kèm đá lạnh/đá khô.</p>
-                           
-                         <p>Vì vậy chúng tôi khuyến khích bạn đặt giao hàng đến trực tiếp địa chỉ bạn sẽ ăn bánh để không phải tự di chuyển bánh nhiều lần.</p>
-                         
-                     </div>
-                 </div>
-               </div>
-             </div>
-           </div>
-         </div>
-       </div>
-     </section>
-   </main>
+                          <p>Nếu bạn di chuyển bằng xe máy thì quãng đường không nên dài quá 30 phút và thời tiết ngoài trời không vượt mức 30 °C (quá nóng bánh sẽ bị chảy), tốt nhất nên di chuyển kèm đá lạnh/đá khô.</p>
+                            
+                          <p>Vì vậy chúng tôi khuyến khích bạn đặt giao hàng đến trực tiếp địa chỉ bạn sẽ ăn bánh để không phải tự di chuyển bánh nhiều lần.</p>
+                          
+                      </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
 
-   <footer>
-     <section class="features" style="margin-top: -30px; background-color: var(--md-sys-color-surface-variant);">
-       <div class="container">
-         <div class="feature-grid">
-           <div class="contact">
-             <a href="../index.html" style="text-decoration: none;"><h1>Sweet Treats</h1></a>
-             <a href="https://www.google.com/maps/place/Tr%C6%B0%E1%BB%9Dng+%C4%90%E1%BA%A1i+h%E1%BB%8Dc+C%C3%B4ng+nghi%E1%BB%87p+TP.HCM/@10.8221589,106.6842705,17z/data=!3m1!4b1!4m6!3m5!1s0x3174deb3ef536f31:0x8b7bb8b7c956157b!8m2!3d10.8221589!4d106.6868454!16s%2Fm%2F02pyzdj?hl=vi-VN&entry=ttu&g_ep=EgoyMDI0MTAyOS4wIKXMDSoASAFQAw%3D%3D" style="text-decoration: none;">
-               <div class="address" style="display: flex; align-items: center; justify-content: center;">
-                 <i class="fa-solid fa-location-dot"></i>
-                 <h3 style="margin-left: 5px; margin-top: 2px;">ĐỊA CHỈ</h3>
-               </div>
-               <p style="margin-top: 5px; margin-bottom: 7px;">12 Nguyễn Văn Bảo, Phường 4, Gò Vấp, Hồ Chí Minh, Việt Nam</p>
-             </a>
-             
-             <a href="https://www.call.com/" style="text-decoration: none;">
-               <div class="hotline" style="display: flex; margin-top: 5px; align-items: center; justify-content: center;">
-                 <i class="fa-solid fa-phone-volume"></i>
-                 <h3 style="margin-left: 5px; margin-top: 2px;">HOTLINE</h3>
-               </div>
-               <p style="margin-top: 5px;">0971 757 513</p>
-             </a>
-             
-             <a href="https://mail.google.com/" style="text-decoration: none;">
-               <div class="email" style="display: flex; margin-top: 5px; align-items: center; justify-content: center;">
-                 <i class="fa-solid fa-envelope"></i>
-                 <h3 style="margin-left: 5px; margin-top: 1px;">EMAIL</h3>
-               </div>
-               <p style="margin-top: 5px;">nnat0105@gmail.com</p>
-             </a>
-           </div>
-       
-           <div class="social">
-             <h3 style="margin-top: -5px;">Theo dõi chúng tôi tại</h3>
-             <div class="logo-social" style="text-align: center; margin-top: 5px;">
-               <a href="https://www.facebook.com/"><img style="height: 35px; margin-right: 20px;" src="../assets/icons/square-facebook-brands-solid.svg" alt=""></a>
-               <a href="https://www.instagram.com/"><img style="height: 35px; margin-right: 20px;" src="../assets/icons/instagram-brands-solid.svg" alt=""></a>
-               <a href="https://www.tiktok.com/"><img style="height: 35px; margin-right: 20px;" src="../assets/icons/tiktok-brands-solid.svg" alt=""></a>
-               <a href="https://www.youtube.com/"><img style="height: 35px;" src="../assets/icons/youtube-brands-solid.svg" alt=""></a>
-             </div>
-           </div>
+    <footer>
+      <section class="features" style="margin-top: -30px; background-color: var(--md-sys-color-surface-variant);">
+        <div class="container">
+          <div class="feature-grid">
+            <div class="contact">
+              <a href="/sweet-treats-master/index.html" style="text-decoration: none;"><h1>Sweet Treats</h1></a>
+              <a href="https://www.google.com/maps/place/Tr%C6%B0%E1%BB%9Dng+%C4%90%E1%BA%A1i+h%E1%BB%8Dc+C%C3%B4ng+nghi%E1%BB%87p+TP.HCM/@10.8221589,106.6842705,17z/data=!3m1!4b1!4m6!3m5!1s0x3174deb3ef536f31:0x8b7bb8b7c956157b!8m2!3d10.8221589!4d106.6868454!16s%2Fm%2F02pyzdj?hl=vi-VN&entry=ttu&g_ep=EgoyMDI0MTAyOS4wIKXMDSoASAFQAw%3D%3D" style="text-decoration: none;">
+                <div class="address" style="display: flex; align-items: center; justify-content: center;">
+                  <i class="fa-solid fa-location-dot"></i>
+                  <h3 style="margin-left: 5px; margin-top: 2px;">ĐỊA CHỈ</h3>
+                </div>
+                <p style="margin-top: 5px; margin-bottom: 7px;">12 Nguyễn Văn Bảo, Phường 4, Gò Vấp, Hồ Chí Minh, Việt Nam</p>
+              </a>
+              
+              <a href="https://www.call.com/" style="text-decoration: none;">
+                <div class="hotline" style="display: flex; margin-top: 5px; align-items: center; justify-content: center;">
+                  <i class="fa-solid fa-phone-volume"></i>
+                  <h3 style="margin-left: 5px; margin-top: 2px;">HOTLINE</h3>
+                </div>
+                <p style="margin-top: 5px;">0971 757 513</p>
+              </a>
+              
+              <a href="https://mail.google.com/" style="text-decoration: none;">
+                <div class="email" style="display: flex; margin-top: 5px; align-items: center; justify-content: center;">
+                  <i class="fa-solid fa-envelope"></i>
+                  <h3 style="margin-left: 5px; margin-top: 1px;">EMAIL</h3>
+                </div>
+                <p style="margin-top: 5px;">nnat0105@gmail.com</p>
+              </a>
+            </div>
+        
+            <div class="social">
+              <h3 style="margin-top: -5px;">Theo dõi chúng tôi tại</h3>
+              <div class="logo-social" style="text-align: center; margin-top: 5px;">
+                <a href="https://www.facebook.com/"><img style="height: 35px; margin-right: 20px;" src="/sweet-treats-master/assets/icons/square-facebook-brands-solid.svg" alt=""></a>
+                <a href="https://www.instagram.com/"><img style="height: 35px; margin-right: 20px;" src="/sweet-treats-master/assets/icons/instagram-brands-solid.svg" alt=""></a>
+                <a href="https://www.tiktok.com/"><img style="height: 35px; margin-right: 20px;" src="/sweet-treats-master/assets/icons/tiktok-brands-solid.svg" alt=""></a>
+                <a href="https://www.youtube.com/"><img style="height: 35px;" src="/sweet-treats-master/assets/icons/youtube-brands-solid.svg" alt=""></a>
+              </div>
+            </div>
 
-           <div class="form">
-             <h3 style="margin-top: -5px;">FORM GÓP Ý</h3>
-             <form action="" style="margin-top: -15px;">
-               <input id="txtHT" class="form-input" type="text" placeholder="Họ tên">
-               <br>
-               <input id="txtDT" class="form-input" style="margin-top: 5px;" type="phone" placeholder="Điện thoại">
-               <br>
-               <input id="txtEmail" class="form-input" style="margin-top: 5px;" type="text" placeholder="Email">
-               <br>
-               <input class="form-input" style="margin-top: 5px; height: 30px;" type="text" placeholder="Nội dung góp ý">
-               <br>
-               <a class="btn btn-secondary" style="margin-top: 5px; height: 20px;"><span style="margin-left: -5px; color: white;" id="btnSend">Gửi</span></a>
-             </form>
-           </div>
-         </div>
-       </div>
-     </section>
-     <p style="margin-top: -50px;">Website made by Nguyễn Nhật Anh Thư - 22663651</p>
-   </footer>
+            <div class="form">
+              <h3 style="margin-top: -5px;">FORM GÓP Ý</h3>
+              <form action="" style="margin-top: -15px;">
+                <input id="txtHT" class="form-input" type="text" placeholder="Họ tên">
+                <br>
+                <input id="txtDT" class="form-input" style="margin-top: 5px;" type="phone" placeholder="Điện thoại">
+                <br>
+                <input id="txtEmail" class="form-input" style="margin-top: 5px;" type="text" placeholder="Email">
+                <br>
+                <input class="form-input" style="margin-top: 5px; height: 30px;" type="text" placeholder="Nội dung góp ý">
+                <br>
+                <a class="btn btn-secondary" style="margin-top: 5px; height: 20px;"><span style="margin-left: -5px; color: white;" id="btnSend">Gửi</span></a>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      <p style="margin-top: -50px;">Website made by Nguyễn Nhật Anh Thư - 22663651</p>
+    </footer>
 
-    <script type="module" src="../scripts/main.js"></script>
-  
+    <script type="module" src="/sweet-treats-master/scripts/main.js"></script>
     <script>
       document.addEventListener("DOMContentLoaded", () => {
         document.querySelectorAll('.accordion-button').forEach(button => {

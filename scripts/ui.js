@@ -1,28 +1,28 @@
 // Import necessary functions from other modules
-import { getCurrentUser } from "./auth.js";
+import { getCurrentUser } from "/sweet-treats-master/scripts/auth.js";
 
 // Define navigation items
 const navItems = {
   loggedOut: [
-    { href: "/index.html", text: "Trang chủ" },
-    { href: "../pages/shop.html", text: "Cửa hàng" },
-    { href: "../pages/about.html", text: "Giới thiệu" },
-    { href: "../pages/sitemap.html", text: "Sitemap" },
-    { href: "../pages/sign-in.html", text: "Đăng nhập" },
-    { href: "../pages/sign-up.html", text: "Đăng ký" },
+    { href: "/sweet-treats-master/index.html", text: "Trang chủ" },
+    { href: "/sweet-treats-master/pages/shop.html", text: "Cửa hàng" },
+    { href: "/sweet-treats-master/pages/about.html", text: "Giới thiệu" },
+    { href: "/sweet-treats-master/pages/sitemap.html", text: "Sitemap" },
+    { href: "/sweet-treats-master/pages/sign-in.html", text: "Đăng nhập" },
+    { href: "/sweet-treats-master/pages/sign-up.html", text: "Đăng ký" },
   ],
   loggedIn: [
-    { href: "../index.html", text: "Trang chủ" },
-    { href: "../pages/shop.html", text: "Cửa hàng" },
-    { href: "../pages/about.html", text: "Giới thiệu" },
-    { href: "../pages/sitemap.html", text: "Sitemap" },
-    { href: "../pages/cart.html", text: "Giỏ hàng", id: "cart-link" },
+    { href: "/sweet-treats-master/index.html", text: "Trang chủ" },
+    { href: "/sweet-treats-master/pages/shop.html", text: "Cửa hàng" },
+    { href: "/sweet-treats-master/pages/about.html", text: "Giới thiệu" },
+    { href: "/sweet-treats-master/pages/sitemap.html", text: "Sitemap" },
+    { href: "/sweet-treats-master/pages/cart.html", text: "Giỏ hàng", id: "cart-link" },
     {
       href: "#",
       text: "Chào, {username}",
       class: "welcome-message dropdown",
       dropdown: [
-        { href: "/pages/me.html", text: "Trang cá nhân" },
+        { href: "/sweet-treats-master/pages/me.html", text: "Trang cá nhân" },
         { href: "#", text: "Đăng xuất", onClick: "logout()" },
       ],
     },
@@ -97,7 +97,7 @@ export function updateNavMenu() {
   if (appBarTitle) {
     // Tạo một phần tử a mới
     const linkElement = document.createElement("a");
-    linkElement.href = "../index.html";
+    linkElement.href = "/sweet-treats-master/index.html";
 
     // Di chuyển nội dung của h1 vào phần tử a
     linkElement.innerHTML = appBarTitle.innerHTML;

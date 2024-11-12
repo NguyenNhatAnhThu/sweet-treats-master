@@ -1,6 +1,6 @@
 // Import necessary functions from other modules
-import { formatCurrency } from "./utils.js";
-import { getCurrentUser } from "./auth.js";
+import { formatCurrency } from "/sweet-treats-master/scripts/utils.js";
+import { getCurrentUser } from "/sweet-treats-master/scripts/auth.js";
 
 let products = [];
 let currentPage = 1;
@@ -28,7 +28,7 @@ function loadProductsFromStorage() {
         name: "Secret Garden",
         price: 595000,
         stock: 8,
-        image: "../assets/images/pro1.jpg",
+        image: "/sweet-treats-master/assets/images/pro1.jpg",
         category: "Nhân xoài, lá dứa, phô mai",
         description:
           "Một chiếc bánh tươi mát với lớp mousse làm từ xoài tươi có vị ngọt thanh, Secret Garden trở nên thú vị hơn bởi sự kết hợp của lớp bạt bánh có hương lá dứa tươi và lớp kem phô mai - cream cheese thơm ngậy. Vẻ ngoài lấp lánh được phủ bởi lớp tráng gương màu xanh bơ và cánh bướm trắng độc đáo từ sô-cô-la nguyên chất, Secret Garden mang thông điệp về sự lãng mạn & tinh thần tự do.",
@@ -38,7 +38,7 @@ function loadProductsFromStorage() {
         name: "One Sunny Day",
         price: 595000,
         stock: 0,
-        image: "../assets/images/pro2.jpg",
+        image: "/sweet-treats-master/assets/images/pro2.jpg",
         category: "Nhân dừa, xoài, chanh leo",
         description:
           "Được làm từ dừa non, xoài và chanh leo, One Sunny Day luôn là vị bánh được lòng tất cả mọi người. Lớp mousse dừa thơm ngậy, kem chanh leo chua nhẹ, lớp mứt xoài nấu tay kết hợp với bạt bánh dừa xốp mềm; cùng tạo hình được phủ bởi lớp tráng gương màu vàng rực rỡ như những ngày nắng đẹp trời, One Sunny Day là chiếc bánh tràn ngập hương vị của vùng nhiệt đới.",
@@ -48,7 +48,7 @@ function loadProductsFromStorage() {
         name: "A Gentle Blend",
         price: 525000,
         stock: 0,
-        image: "../assets/images/pro3.jpg",
+        image: "/sweet-treats-master/assets/images/pro3.jpg",
         category: "Nhân cà phê, cốt dừa",
         description:
           "Lấy cảm hứng từ những hương vị quen thuộc, A Gentle Blend là sự kết hợp hài hoà giữa lớp kem mousse cà phê rang xay đậm đà, cùng lớp kem dừa thơm ngậy. Với vẻ ngoài tinh tế được bao phủ bởi lớp nhung làm từ bơ cacao và trang trí bởi những chiếc lông vũ làm từ sô-cô-la nguyên chất. Đây là một chiếc bánh có vị ngọt vừa phải và rất phù hợp với những người yêu thích cà phê.",
@@ -58,7 +58,7 @@ function loadProductsFromStorage() {
         name: "A Little Grace",
         price: 650000,
         stock: 7,
-        image: "../assets/images/pro4.jpg",
+        image: "/sweet-treats-master/assets/images/pro4.jpg",
         category: "Nhân trà earlgrey, cam, sô-cô-la",
         description:
           "Đậm đà vị trà Earl Grey trong lớp kem mousse, cùng sự tươi mới của mứt cam ruột đỏ được nấu chậm và chút ngọt ngào của lớp crémeux làm từ sô-cô-la đen, A Little Grace được trang trí với tone màu trắng và một chiếc nơ làm thủ công từ sô-cô-la mang lại vẻ ngoài nhẹ nhàng và tao nhã. Nếu bạn tìm kiếm một chiếc bánh tối giản nhưng vẫn có chút đáng yêu thì A Little Grace là lựa chọn phù hợp.",
@@ -68,7 +68,7 @@ function loadProductsFromStorage() {
         name: "Daisy Sparkle",
         price: 595000,
         stock: 4,
-        image: "../assets/images/pro5.jpg",
+        image: "/sweet-treats-master/assets/images/pro5.jpg",
         category: "Nhân dừa, xoài, chanh leo",
         description:
           "Bắt đầu từ lớp mousse dừa ngoài cùng thơm ngậy, bạt bánh dừa tươi đi với kem chanh leo chua nhẹ, thêm lớp mứt xoài Cát Chu vàng nấu tay - đây vẫn luôn là vị bánh được yêu thích nhất của Sweet Treats Pastry. Khi ăn bạn sẽ thấy vị hoa quả nhiệt đới tươi mát, xen lẫn vị ngọt chua rất dễ chịu. Được thiết kế với một chiếc vương miện xinh xắn, điểm thêm hoa cúc Daisy trên nền glaze vàng tươi óng ả. Nếu bạn chưa từng thử bánh tại Sweet Treats thì đây nên là hương vị dành cho lần thử đầu tiên của bạn.",
@@ -78,7 +78,7 @@ function loadProductsFromStorage() {
         name: "Lily’s Valley",
         price: 665000,
         stock: 16,
-        image: "../assets/images/pro6.jpg",
+        image: "/sweet-treats-master/assets/images/pro6.jpg",
         category: "Nhân vani, anh đào, dâu tây",
         description:
           "Lily’s Valley có hương vị ngọt ngào, dễ thương và rất gần gũi. Lớp mousse vani thơm ngậy được làm từ quả vani Madagascar là chủ đề chính của chiếc bánh này. Bạn sẽ có cảm giác như ăn một chiếc kem vani mát lạnh có thêm lớp nhân mứt nấu tay từ quả anh đào và dâu tây - thơm lừng, mọng nước. Điểm nhấn của chiếc bánh còn là lớp crumble hạnh nhân bùi bùi giòn rụm và cả lớp bạt bánh vỏ chanh xanh tươi mát. Với tạo hình từ những bông hoa xinh xắn xếp trên nền tráng gương hồng phấn, Lily’s Valley là một chiếc bánh vừa ngon, vừa xinh xắn để bạn dễ dàng lựa chọn.",
@@ -88,7 +88,7 @@ function loadProductsFromStorage() {
         name: "The Fortunate",
         price: 620000,
         stock: 40,
-        image: "../assets/images/pro7.jpg",
+        image: "/sweet-treats-master/assets/images/pro7.jpg",
         category: "Nhân xoài, lá dứa, phô mai",
         description:
           "Nằm trong bộ sưu tập những chiếc bánh mang theo ý nghĩa của riêng mình, The Fortunate là một chiếc bánh mang theo lời chúc dành cho sự may mắn. Những chiếc cỏ bốn lá xinh xắn – luôn được biết tới là biểu tượng của sự may mắn, làm từ sô-cô-la nguyên chất được gắn một cách khéo léo trên nền tráng gương xanh nõn tươi sáng. The Fortunate có vị Xoài, Lá dứa & Phô mai. Với các tầng hương vị tươi mát từ lớp mousse xoài tươi có vị ngọt thanh, kết hợp cùng với lớp bạt bánh có hương lá dứa tươi và lớp kem phô mai - cream cheese thơm ngậy. Đây sẽ là chiếc bánh của sự an lành 🍀",
@@ -98,7 +98,7 @@ function loadProductsFromStorage() {
         name: "Be in Blossom",
         price: 880000,
         stock: 12,
-        image: "../assets/images/pro8.jpg",
+        image: "/sweet-treats-master/assets/images/pro8.jpg",
         category: "Nhân vải, phúc bồn tử, dừa",
         description:
           "Mang đến một sự cân bằng tuyệt vời giữa vị chua nhẹ, ngọt thanh và thơm ngậy trong cùng một miếng bánh bằng cách sử dụng vải, dừa và phúc bồn tử. Có thể nói đây chính là sự kết hợp rất thú vị giữa Á & Âu. Không chỉ đặc biệt trong hương vị, lớp bạt bánh của Be in Blossom cũng có hai kết cấu khác nhau: cảm giác mềm xốp đến từ lớp Sponge dừa và một chút độ giòn của sợi dừa tươi nằm trong lớp bạt Dacquoise. Đây không chỉ là một món quà tuyệt vời, mà còn là lựa chọn xứng đáng cho mọi bữa tiệc sinh nhật, gặp gỡ bạn bè hay các dịp họp mặt gia đình.",
@@ -108,7 +108,7 @@ function loadProductsFromStorage() {
         name: "The Glory",
         price: 635000,
         stock: 18,
-        image: "../assets/images/pro9.jpg",
+        image: "/sweet-treats-master/assets/images/pro9.jpg",
         category: "Nhân dừa, xoài, chanh leo",
         description:
           "Khi chiếc bánh mang theo ý nghĩa của riêng mình, The Glory chính là một lời chúc dành cho sự thành công. Với hương vị luôn được yêu thích nhất của LaFuong từ trước tới giờ, The Glory là sự kết hợp của Dừa, Xoài & Chanh leo. Hài hoà ở lớp mousse dừa, chua nhẹ ở lớp kem xoài chanh leo, bánh có độ ngọt rất vừa phải, thanh mát và dễ dàng phù hợp với khẩu vị của người Việt. Chiếc bánh được thiết kế với những chiếc lông vũ tinh tế, tỉ mỉ và sang trọng trên nền tráng gương vàng tươi nổi bật. Tạo nên một biểu tượng hoàn hảo cho sự thành công rực rỡ",
@@ -118,7 +118,7 @@ function loadProductsFromStorage() {
         name: "Ivory Noir",
         price: 680000,
         stock: 22,
-        image: "../assets/images/pro10.jpg",
+        image: "/sweet-treats-master/assets/images/pro10.jpg",
         category: "Nhân sô-cô-la, vani",
         description:
           "Trở về với những hương vị quen thuộc nhất, “với phiên bản nâng cấp” là chủ đề mà LaFuong muốn gửi tới các bạn qua chiếc bánh này – Ivory Noir. Chiếc bánh có vị Sô-cô-la & Vani, một sự kết hợp hương vị đầy cổ điển, vừa độc đáo lại vừa phổ biến trong ẩm thực. Bắt đầu với lớp mousse được làm từ sô-cô-la nguyên chất, đi kèm lớp bạt sô-cô-la đen bông mềm, kết hợp lớp kem ngậy làm từ quả vani Madagascar cao cấp, thêm chút giòn giòn của bánh quy hạnh nhân bọc sô-cô-la. Khi kết hợp cùng nhau, tất cả tạo nên một sự cân bằng hoàn hảo, một hương vị đậm đà, phức tạp và hấp dẫn.",
@@ -128,7 +128,7 @@ function loadProductsFromStorage() {
         name: "The Blessing",
         price: 665000,
         stock: 35,
-        image: "../assets/images/pro11.jpg",
+        image: "/sweet-treats-master/assets/images/pro11.jpg",
         category: "Nhân vani, anh đào, dâu tây",
         description:
           "Là chiếc bánh trong bộ sưu tập những chiếc bánh mang theo ý nghĩa của riêng mình, The Blessing – một lời chúc dành cho niềm hạnh phúc! Như một lời chúc gợi nhớ về những khoảnh khắc hạnh phúc và niềm vui ta có được từ những điều giản dị hàng ngày, vì đơn giản hạnh phúc là khi ta cảm thấy đủ đầy 🌷. Nhẹ nhàng & thanh lịch, màu tím luôn đại diện cho sự hoà hợp và bình yên, kết hợp với những chiếc nơ hồng phớt nhỏ nhắn. The Blessing có hương vị chủ đạo là Vani, Anh đào & Dâu tây. Thơm ngậy lớp mousse từ quả vani Madagasca, lại có thêm vị ngọt ngào đáng yêu của anh đào, dâu tây cùng lớp crumble hạnh nhân bùi bùi giòn rụm và cả lớp bạt bánh vỏ chanh xanh tươi mát. Chiếc bánh thay lời chúc phúc thật ngọt ngào 🫧",
@@ -138,7 +138,7 @@ function loadProductsFromStorage() {
         name: "Whisper White",
         price: 650000,
         stock: 9,
-        image: "../assets/images/pro12.jpg",
+        image: "/sweet-treats-master/assets/images/pro12.jpg",
         category: "Nhân trà earlgrey, cam, sô-cô-la",
         description:
           "Nốt hương đầu tiên bạn cảm nhận được sẽ là vị tươi mới của lớp mứt cam ruột đỏ nấu chậm. Tiếp đó là chút ngọt dịu của lớp crémeux làm từ sô-cô-la đen nguyên chất và hậu vị đọng lại sẽ là sự đậm đà trong lớp kem mousse làm từ trà Earlgrey được ủ lạnh qua đêm. Với vẻ ngoài được đổ lớp tráng gương màu trắng trang nhã, điểm thêm những chiếc lông vũ rơi nhẹ tinh tế, Whisper White đem lại cảm giác đủ trung tính để bạn có thể thoải mái gửi tặng người thương dù người ấy là nam hay nữ.",
@@ -148,7 +148,7 @@ function loadProductsFromStorage() {
         name: "Orient Scent",
         price: 595000,
         stock: 16,
-        image: "../assets/images/pro13.jpg",
+        image: "/sweet-treats-master/assets/images/pro13.jpg",
         category: "Nhân xoài, lá dứa, phô mai",
         description:
           "Một chiếc bánh có thiết kế tối giản, lịch thiệp, nhưng chứa đựng một ý nghĩa sâu sắc. Chiếc bánh Orient Scent được ra đời với thông điệp về sự đủ đầy & tốt lành. “Trời tròn - Đất vuông” đơn giản như vậy, tạo hình trên nền tráng gương màu xanh lá dịu mát có hình vuông tượng trưng cho đất & hình tròn tượng trưng cho trời. Hương vị chủ đạo là xoài tươi và lá dứa - đậm chất Châu Á, kết hợp thêm cùng phô-mai cream cheese của Châu Âu, chiếc bánh này sẽ đem lại cảm giác tươi mát, thơm ngậy và ngọt dịu khi thưởng thức.",
@@ -158,7 +158,7 @@ function loadProductsFromStorage() {
         name: "Beloved Darling",
         price: 665000,
         stock: 20,
-        image: "../assets/images/pro14.jpg",
+        image: "/sweet-treats-master/assets/images/pro14.jpg",
         category: "Nhân sô-cô-la, dâu rừng, vani",
         description:
           "Nếu bạn là fan của Sô-cô-la, hãy thử Beloved Darling - với lớp kem mousse được làm từ sô-cô-la đen chất lượng cao đi cùng mứt quả dâu rừng được nấu tay và một lớp crémeux làm từ quả vanilla Madagascar. Cũng giống như sự bùng nổ trong hương vị, vẻ ngoài của chiếc bánh được trang trí bởi lớp tráng gương màu đỏ đun kết hợp với chiếc lông vũ phủ nhũ vàng đồng sang trọng. Đây sẽ là lựa chọn hoàn hảo cho mọi bữa tiệc của bạn.",
@@ -168,7 +168,7 @@ function loadProductsFromStorage() {
         name: "Roll in Love",
         price: 435000,
         stock: 45,
-        image: "../assets/images/pro15.jpg",
+        image: "/sweet-treats-master/assets/images/pro15.jpg",
         category: "Nhân sô-cô-la, dâu rừng, vani",
         description:
           "Cùng mang hương vị của chiếc bánh Beloved Darling - với lớp kem mousse được làm từ sô-cô-la đen chất lượng cao đi cùng mứt quả dâu rừng được nấu tay và một lớp crémeux làm từ quả vanilla Madagascar. Roll in Love là một chiếc bánh trái tim xinh xắn để bạn dành tặng cho người mình yêu. Không cần đợi đến Valentine để có một chiếc bánh hình trái tim, vì ngày nào cũng là ngày để yêu nhau!",
@@ -178,7 +178,7 @@ function loadProductsFromStorage() {
         name: "All Yours",
         price: 435000,
         stock: 11,
-        image: "../assets/images/pro16.jpg",
+        image: "/sweet-treats-master/assets/images/pro16.jpg",
         category: "Nhân vani, anh đào, dâu tây",
         description:
           "Nếu bạn hay gọi vị vani khi ăn kem thì hãy thử All Yours. Sử dụng hạt nguyên chất từ quả vanilla Madagascar, lớp mousse ngoài cùng của chiếc bánh mang lại cảm giác thơm ngậy, mềm mịn. Lớp mousse vani sẽ làm nền để lớp coulis - mứt nấu tay từ quả anh đào và dâu tây trở nên thực sự nổi bật. Điều thích thú hơn là khi cắn vào lớp giữa, bạn sẽ thấy những miếng crumble hạnh nhân bùi bùi giòn rụm và cả lớp bạt bánh vỏ chanh xanh tươi mát. Một sự kết hợp từ những hương vị đầy truyền thống nhưng lại dễ thương bất ngờ.",
@@ -188,7 +188,7 @@ function loadProductsFromStorage() {
         name: "Heart to Heart",
         price: 435000,
         stock: 11,
-        image: "../assets/images/pro17.jpg",
+        image: "/sweet-treats-master/assets/images/pro17.jpg",
         category: "Nhân sô-cô-la, dâu rừng, vani",
         description:
           "Một chiếc bánh có hương vị và vẻ ngoài rất lãng mạn. Heart to Heart mang đến sự đậm đà của sô-cô-la đen nguyên chất ngay từ lớp mousse cho tới lớp bạt bánh mềm mịn. Để sự nguyên chất của sô-cô-la dịu lại, lớp crémeux được làm từ quả vanilla Madagascar sẽ làm chiếc bánh trở nên hài hoà hơn. Sự bùng nổ trong chiếc bánh này nằm ở lớp mứt các loại quả dâu rừng được nấu tay.",
@@ -220,7 +220,7 @@ function renderProducts(filteredProducts = products) {
     const productElement = document.createElement("div");
     productElement.className = "product-item";
     productElement.innerHTML = `
-      <a href="../pages/product-detail.html?id=${product.id}">
+      <a href="/sweet-treats-master/pages/product-detail.html?id=${product.id}">
         <img src="${product.image}" alt="${product.name}">
       </a>
       <div class="product-info">
@@ -311,7 +311,7 @@ function checkUserLoggedIn() {
 // Show login popup
 function showLoginPopup() {
   alert("Vui lòng đăng nhập trước khi mua hàng");
-  window.location.href = "../pages/sign-in.html";
+  window.location.href = "/sweet-treats-master/pages/sign-in.html";
 }
 
 // Search products

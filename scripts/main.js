@@ -1,10 +1,10 @@
 // Import necessary modules
-import { initAuth } from "./auth.js";
-import { initCart } from "./cart.js";
-import { initProducts } from "./shop.js";
-import { initUI } from "./ui.js";
-import { initProductDetail } from "./product-detail.js";
-import { addFavicon } from "./addFavicon.js";
+import { initAuth } from "/sweet-treats-master/scripts/auth.js";
+import { initCart } from "/sweet-treats-master/scripts/cart.js";
+import { initProducts } from "/sweet-treats-master/scripts/shop.js";
+import { initUI } from "/sweet-treats-master/scripts/ui.js";
+import { initProductDetail } from "/sweet-treats-master/scripts/product-detail.js";
+import { addFavicon } from "/sweet-treats-master/scripts/addFavicon.js";
 
 // Gọi hàm addFavicon ngay khi main.js được tải
 addFavicon();
