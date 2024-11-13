@@ -1,6 +1,7 @@
 import { formatCurrency } from "/sweet-treats-master/scripts/utils.js";
 import { addToCart } from "/sweet-treats-master/scripts/shop.js";
 
+
 function getProductIdFromUrl() {
   const urlParams = new URLSearchParams(window.location.search);
   return urlParams.get("id");

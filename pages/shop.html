@@ -4,105 +4,105 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cửa hàng - Sweet Treats</title>
-    <link rel="stylesheet" href="/sweet-treats-master/styles/styles.css" />
-    <link rel="stylesheet" href="/sweet-treats-master/styles/responsive.css" />
-    <style>
+    <link rel="stylesheet" href="../styles/styles.css" />
+    <link rel="stylesheet" href="../styles/responsive.css" />
+    <style>    
      .accordion-item {
-          border-top: 1px solid #ddd;
-      }
-      
-      .accordion-button {
-          width: 100%;
-          background: none;
-          border: none;
-          outline: none;
-          text-align: left;
-          padding: 15px;
-          font-size: 16px;
-          cursor: pointer;
-          color: #333;
-          font-weight: bold;
-          transition: background-color 0.2s;
-      }
-      
-      .accordion-button:hover {
-          background-color: #f0f0f0;
-      }
-      
-      .accordion-content {
-          padding: 15px;
-          display: none;
-          font-size: 15px;
-          color: #555;
-      }
-      
-      .accordion-content p {
-          margin: 0;
-      }
-      
-      a {
-          color: #007bff;
-          text-decoration: none;
-      }
-    </style>
-  </head>
-  <body>
-    <header class="app-bar">
-      <div class="container">
-        <h1 class="app-bar-title">Sweet Treats</h1>
-        <nav>
-          <button class="menu-toggle" aria-label="Toggle menu">
-            <i class="fa-solid fa-bars"></i>
-          </button>
-          <ul class="nav-menu"></ul>
-        </nav>
-      </div>
-    </header>
+         border-top: 1px solid #ddd;
+     }
+     
+     .accordion-button {
+         width: 100%;
+         background: none;
+         border: none;
+         outline: none;
+         text-align: left;
+         padding: 15px;
+         font-size: 16px;
+         cursor: pointer;
+         color: #333;
+         font-weight: bold;
+         transition: background-color 0.2s;
+     }
+     
+     .accordion-button:hover {
+         background-color: #f0f0f0;
+     }
+     
+     .accordion-content {
+         padding: 15px;
+         display: none;
+         font-size: 15px;
+         color: #555;
+     }
+     
+     .accordion-content p {
+         margin: 0;
+     }
+     
+     a {
+         color: #007bff;
+         text-decoration: none;
+     }
+   </style>
+ </head>
+ <body>
+   <header class="app-bar">
+     <div class="container">
+       <h1 class="app-bar-title">Sweet Treats</h1>
+       <nav>
+         <button class="menu-toggle" aria-label="Toggle menu">
+           <i class="fa-solid fa-bars"></i>
+         </button>
+         <ul class="nav-menu"></ul>
+       </nav>
+     </div>
+   </header>
 
-    <main>
-      <section class="products">
-        <div class="container">
-          <div class="search-bar">
-            <input
-              type="text"
-              id="search-input"
-              placeholder="Tìm kiếm sản phẩm..."
-            />
-          </div>
+   <main>
+     <section class="products">
+       <div class="container">
+         <div class="search-bar">
+           <input
+             type="text"
+             id="search-input"
+             placeholder="Tìm kiếm sản phẩm..."
+           />
+         </div>
 
-          <div class="filters">
-            <select id="category-filter">
-              <option value="">Tất cả danh mục</option>
-              <option value="banh-kem">Nhân xoài, lá dứa, phô mai</option>
-              <option value="banh-quy">Dừa, xoài, chanh leo</option>
-              <option value="keo">Nhân cà phê, cốt dừa</option>
-              <option value="chocolate">Nhân trà earlgrey, cam, sô-cô-la</option>
-            </select>
-            <select id="price-filter">
-              <option value="">Tất cả giá</option>
-              <option value="0-50000">500.000đ - 600.000đ</option>
-              <option value="50000-100000">600.000đ - 700.000đ</option>
-              <option value="100000-200000">700.000đ - 800.000đ</option>
-              <option value="200000-">Trên 800.000đ</option>
-            </select>
-            <select id="sort-option">
-              <option value="name-asc">Tên A-Z</option>
-              <option value="name-desc">Tên Z-A</option>
-              <option value="price-asc">Giá tăng dần</option>
-              <option value="price-desc">Giá giảm dần</option>
-            </select>
-            <a href="#" id="clear-filters">Xóa bộ lọc</a>
-          </div>
+         <div class="filters">
+           <select id="category-filter">
+             <option value="">Tất cả danh mục</option>
+             <option value="banh-kem">Nhân xoài, lá dứa, phô mai</option>
+             <option value="banh-quy">Dừa, xoài, chanh leo</option>
+             <option value="keo">Nhân cà phê, cốt dừa</option>
+             <option value="chocolate">Nhân trà earlgrey, cam, sô-cô-la</option>
+           </select>
+           <select id="price-filter">
+             <option value="">Tất cả giá</option>
+             <option value="0-50000">500.000đ - 600.000đ</option>
+             <option value="50000-100000">600.000đ - 700.000đ</option>
+             <option value="100000-200000">700.000đ - 800.000đ</option>
+             <option value="200000-">Trên 800.000đ</option>
+           </select>
+           <select id="sort-option">
+             <option value="name-asc">Tên A-Z</option>
+             <option value="name-desc">Tên Z-A</option>
+             <option value="price-asc">Giá tăng dần</option>
+             <option value="price-desc">Giá giảm dần</option>
+           </select>
+           <a href="#" id="clear-filters">Xóa bộ lọc</a>
+         </div>
 
-          <div id="product-list" class="product-grid"></div>
+         <div id="product-list" class="product-grid"></div>
 
-          <div class="pagination" id="pagination">
-            <!-- Pagination buttons will be added here dynamically -->
-          </div>
-        </div>
-      </section>
+         <div class="pagination" id="pagination">
+           <!-- Pagination buttons will be added here dynamically -->
+         </div>
+       </div>
+     </section>
 
-      <h2 class="section-title">Các câu hỏi thường gặp</h2>
+     <h2 class="section-title">Các câu hỏi thường gặp</h2>
      <section class="hero" style="background-color: rgb(253,247,255); margin-top: -100px;">
        <div class="container">
          <div class="hero-content" style="display: flex;">
@@ -223,70 +223,71 @@
          </div>
        </div>
      </section>
-    </main>
+   </main>
 
-    <footer>
-      <section class="features" style="margin-top: -30px; background-color: var(--md-sys-color-surface-variant);">
-        <div class="container">
-          <div class="feature-grid">
-            <div class="contact">
-              <a href="/sweet-treats-master/index.html" style="text-decoration: none;"><h1>Sweet Treats</h1></a>
-              <a href="https://www.google.com/maps/place/Tr%C6%B0%E1%BB%9Dng+%C4%90%E1%BA%A1i+h%E1%BB%8Dc+C%C3%B4ng+nghi%E1%BB%87p+TP.HCM/@10.8221589,106.6842705,17z/data=!3m1!4b1!4m6!3m5!1s0x3174deb3ef536f31:0x8b7bb8b7c956157b!8m2!3d10.8221589!4d106.6868454!16s%2Fm%2F02pyzdj?hl=vi-VN&entry=ttu&g_ep=EgoyMDI0MTAyOS4wIKXMDSoASAFQAw%3D%3D" style="text-decoration: none;">
-                <div class="address" style="display: flex; align-items: center; justify-content: center;">
-                  <i class="fa-solid fa-location-dot"></i>
-                  <h3 style="margin-left: 5px; margin-top: 2px;">ĐỊA CHỈ</h3>
-                </div>
-                <p style="margin-top: 5px; margin-bottom: 7px;">12 Nguyễn Văn Bảo, Phường 4, Gò Vấp, Hồ Chí Minh, Việt Nam</p>
-              </a>
-              
-              <a href="https://www.call.com/" style="text-decoration: none;">
-                <div class="hotline" style="display: flex; margin-top: 5px; align-items: center; justify-content: center;">
-                  <i class="fa-solid fa-phone-volume"></i>
-                  <h3 style="margin-left: 5px; margin-top: 2px;">HOTLINE</h3>
-                </div>
-                <p style="margin-top: 5px;">0971 757 513</p>
-              </a>
-              
-              <a href="https://mail.google.com/" style="text-decoration: none;">
-                <div class="email" style="display: flex; margin-top: 5px; align-items: center; justify-content: center;">
-                  <i class="fa-solid fa-envelope"></i>
-                  <h3 style="margin-left: 5px; margin-top: 1px;">EMAIL</h3>
-                </div>
-                <p style="margin-top: 5px;">nnat0105@gmail.com</p>
-              </a>
-            </div>
-        
-            <div class="social">
-              <h3 style="margin-top: -5px;">Theo dõi chúng tôi tại</h3>
-              <div class="logo-social" style="text-align: center; margin-top: 5px;">
-                <a href="https://www.facebook.com/"><img style="height: 35px; margin-right: 20px;" src="/sweet-treats-master/assets/icons/square-facebook-brands-solid.svg" alt=""></a>
-                <a href="https://www.instagram.com/"><img style="height: 35px; margin-right: 20px;" src="/sweet-treats-master/assets/icons/instagram-brands-solid.svg" alt=""></a>
-                <a href="https://www.tiktok.com/"><img style="height: 35px; margin-right: 20px;" src="/sweet-treats-master/assets/icons/tiktok-brands-solid.svg" alt=""></a>
-                <a href="https://www.youtube.com/"><img style="height: 35px;" src="/sweet-treats-master/assets/icons/youtube-brands-solid.svg" alt=""></a>
-              </div>
-            </div>
+   <footer>
+     <section class="features" style="margin-top: -30px; background-color: var(--md-sys-color-surface-variant);">
+       <div class="container">
+         <div class="feature-grid">
+           <div class="contact">
+             <a href="../index.html" style="text-decoration: none;"><h1>Sweet Treats</h1></a>
+             <a href="https://www.google.com/maps/place/Tr%C6%B0%E1%BB%9Dng+%C4%90%E1%BA%A1i+h%E1%BB%8Dc+C%C3%B4ng+nghi%E1%BB%87p+TP.HCM/@10.8221589,106.6842705,17z/data=!3m1!4b1!4m6!3m5!1s0x3174deb3ef536f31:0x8b7bb8b7c956157b!8m2!3d10.8221589!4d106.6868454!16s%2Fm%2F02pyzdj?hl=vi-VN&entry=ttu&g_ep=EgoyMDI0MTAyOS4wIKXMDSoASAFQAw%3D%3D" style="text-decoration: none;">
+               <div class="address" style="display: flex; align-items: center; justify-content: center;">
+                 <i class="fa-solid fa-location-dot"></i>
+                 <h3 style="margin-left: 5px; margin-top: 2px;">ĐỊA CHỈ</h3>
+               </div>
+               <p style="margin-top: 5px; margin-bottom: 7px;">12 Nguyễn Văn Bảo, Phường 4, Gò Vấp, Hồ Chí Minh, Việt Nam</p>
+             </a>
+             
+             <a href="https://www.call.com/" style="text-decoration: none;">
+               <div class="hotline" style="display: flex; margin-top: 5px; align-items: center; justify-content: center;">
+                 <i class="fa-solid fa-phone-volume"></i>
+                 <h3 style="margin-left: 5px; margin-top: 2px;">HOTLINE</h3>
+               </div>
+               <p style="margin-top: 5px;">0971 757 513</p>
+             </a>
+             
+             <a href="https://mail.google.com/" style="text-decoration: none;">
+               <div class="email" style="display: flex; margin-top: 5px; align-items: center; justify-content: center;">
+                 <i class="fa-solid fa-envelope"></i>
+                 <h3 style="margin-left: 5px; margin-top: 1px;">EMAIL</h3>
+               </div>
+               <p style="margin-top: 5px;">nnat0105@gmail.com</p>
+             </a>
+           </div>
+       
+           <div class="social">
+             <h3 style="margin-top: -5px;">Theo dõi chúng tôi tại</h3>
+             <div class="logo-social" style="text-align: center; margin-top: 5px;">
+               <a href="https://www.facebook.com/"><img style="height: 35px; margin-right: 20px;" src="../assets/icons/square-facebook-brands-solid.svg" alt=""></a>
+               <a href="https://www.instagram.com/"><img style="height: 35px; margin-right: 20px;" src="../assets/icons/instagram-brands-solid.svg" alt=""></a>
+               <a href="https://www.tiktok.com/"><img style="height: 35px; margin-right: 20px;" src="../assets/icons/tiktok-brands-solid.svg" alt=""></a>
+               <a href="https://www.youtube.com/"><img style="height: 35px;" src="../assets/icons/youtube-brands-solid.svg" alt=""></a>
+             </div>
+           </div>
 
-            <div class="form">
-              <h3 style="margin-top: -5px;">FORM GÓP Ý</h3>
-              <form action="" style="margin-top: -15px;">
-                <input id="txtHT" class="form-input" type="text" placeholder="Họ tên">
-                <br>
-                <input id="txtDT" class="form-input" style="margin-top: 5px;" type="phone" placeholder="Điện thoại">
-                <br>
-                <input id="txtEmail" class="form-input" style="margin-top: 5px;" type="text" placeholder="Email">
-                <br>
-                <input class="form-input" style="margin-top: 5px; height: 30px;" type="text" placeholder="Nội dung góp ý">
-                <br>
-                <a class="btn btn-secondary" style="margin-top: 5px; height: 20px;"><span style="margin-left: -5px; color: white;" id="btnSend">Gửi</span></a>
-              </form>
-            </div>
-          </div>
-        </div>
-      </section>
-      <p style="margin-top: -50px;">Website made by Nguyễn Nhật Anh Thư - 22663651</p>
-    </footer>
+           <div class="form">
+             <h3 style="margin-top: -5px;">FORM GÓP Ý</h3>
+             <form action="" style="margin-top: -15px;">
+               <input id="txtHT" class="form-input" type="text" placeholder="Họ tên">
+               <br>
+               <input id="txtDT" class="form-input" style="margin-top: 5px;" type="phone" placeholder="Điện thoại">
+               <br>
+               <input id="txtEmail" class="form-input" style="margin-top: 5px;" type="text" placeholder="Email">
+               <br>
+               <input class="form-input" style="margin-top: 5px; height: 30px;" type="text" placeholder="Nội dung góp ý">
+               <br>
+               <a class="btn btn-secondary" style="margin-top: 5px; height: 20px;"><span style="margin-left: -5px; color: white;" id="btnSend">Gửi</span></a>
+             </form>
+           </div>
+         </div>
+       </div>
+     </section>
+     <p style="margin-top: -50px;">Website made by Nguyễn Nhật Anh Thư - 22663651</p>
+   </footer>
 
-    <script type="module" src="/sweet-treats-master/scripts/main.js"></script>
+    <script type="module" src="../scripts/main.js"></script>
+  
     <script>
       document.addEventListener("DOMContentLoaded", () => {
         document.querySelectorAll('.accordion-button').forEach(button => {

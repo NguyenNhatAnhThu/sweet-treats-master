@@ -111,7 +111,7 @@ function loadProductsFromStorage() {
         image: "/sweet-treats-master/assets/images/pro9.jpg",
         category: "Nhân dừa, xoài, chanh leo",
         description:
-          "Khi chiếc bánh mang theo ý nghĩa của riêng mình, The Glory chính là một lời chúc dành cho sự thành công. Với hương vị luôn được yêu thích nhất của LaFuong từ trước tới giờ, The Glory là sự kết hợp của Dừa, Xoài & Chanh leo. Hài hoà ở lớp mousse dừa, chua nhẹ ở lớp kem xoài chanh leo, bánh có độ ngọt rất vừa phải, thanh mát và dễ dàng phù hợp với khẩu vị của người Việt. Chiếc bánh được thiết kế với những chiếc lông vũ tinh tế, tỉ mỉ và sang trọng trên nền tráng gương vàng tươi nổi bật. Tạo nên một biểu tượng hoàn hảo cho sự thành công rực rỡ",
+          "Khi chiếc bánh mang theo ý nghĩa của riêng mình, The Glory chính là một lời chúc dành cho sự thành công. Với hương vị luôn được yêu thích nhất của Sweet Treats từ trước tới giờ, The Glory là sự kết hợp của Dừa, Xoài & Chanh leo. Hài hoà ở lớp mousse dừa, chua nhẹ ở lớp kem xoài chanh leo, bánh có độ ngọt rất vừa phải, thanh mát và dễ dàng phù hợp với khẩu vị của người Việt. Chiếc bánh được thiết kế với những chiếc lông vũ tinh tế, tỉ mỉ và sang trọng trên nền tráng gương vàng tươi nổi bật. Tạo nên một biểu tượng hoàn hảo cho sự thành công rực rỡ",
       },
       {
         id: 10,
@@ -121,7 +121,7 @@ function loadProductsFromStorage() {
         image: "/sweet-treats-master/assets/images/pro10.jpg",
         category: "Nhân sô-cô-la, vani",
         description:
-          "Trở về với những hương vị quen thuộc nhất, “với phiên bản nâng cấp” là chủ đề mà LaFuong muốn gửi tới các bạn qua chiếc bánh này – Ivory Noir. Chiếc bánh có vị Sô-cô-la & Vani, một sự kết hợp hương vị đầy cổ điển, vừa độc đáo lại vừa phổ biến trong ẩm thực. Bắt đầu với lớp mousse được làm từ sô-cô-la nguyên chất, đi kèm lớp bạt sô-cô-la đen bông mềm, kết hợp lớp kem ngậy làm từ quả vani Madagascar cao cấp, thêm chút giòn giòn của bánh quy hạnh nhân bọc sô-cô-la. Khi kết hợp cùng nhau, tất cả tạo nên một sự cân bằng hoàn hảo, một hương vị đậm đà, phức tạp và hấp dẫn.",
+          "Trở về với những hương vị quen thuộc nhất, “với phiên bản nâng cấp” là chủ đề mà Sweet Treats muốn gửi tới các bạn qua chiếc bánh này – Ivory Noir. Chiếc bánh có vị Sô-cô-la & Vani, một sự kết hợp hương vị đầy cổ điển, vừa độc đáo lại vừa phổ biến trong ẩm thực. Bắt đầu với lớp mousse được làm từ sô-cô-la nguyên chất, đi kèm lớp bạt sô-cô-la đen bông mềm, kết hợp lớp kem ngậy làm từ quả vani Madagascar cao cấp, thêm chút giòn giòn của bánh quy hạnh nhân bọc sô-cô-la. Khi kết hợp cùng nhau, tất cả tạo nên một sự cân bằng hoàn hảo, một hương vị đậm đà, phức tạp và hấp dẫn.",
       },
       {
         id: 11,
