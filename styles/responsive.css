@@ -181,6 +181,13 @@
 }
 
 @media (max-width: 480px) {
+  .faq-container {
+    width: 93%;
+  }
+  .search-bar input {
+    width: 93%;
+    margin-bottom: -10px;
+  }
   
   .product-detail-image {
     max-width: 100%;
