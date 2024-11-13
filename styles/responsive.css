@@ -4,6 +4,13 @@
 }
 
 @media (max-width: 768px) {
+  .faq-container {
+    width: 93%;
+  }
+  .search-bar input {
+    width: 93%;
+    margin-bottom: -10px;
+  }
   .product-detail-content {
     flex-direction: column;
   }
