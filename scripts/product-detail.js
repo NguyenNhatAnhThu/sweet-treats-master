@@ -1,5 +1,5 @@
-import { formatCurrency } from "/sweet-treats-master/scripts/utils.js";
-import { addToCart } from "/sweet-treats-master/scripts/shop.js";
+import { formatCurrency } from "./utils.js";
+import { addToCart } from "./shop.js";
 
 
 function getProductIdFromUrl() {

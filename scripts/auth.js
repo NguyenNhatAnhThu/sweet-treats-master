@@ -1,11 +1,11 @@
 // Import necessary functions from other modules
-import { showMessage } from "/sweet-treats-master/scripts/ui.js";
+import { showMessage } from "./ui.js";
 import {
   validateEmail,
   validateUsername,
   validatePassword,
   validateConfirmPassword,
-} from "/sweet-treats-master/scripts/utils.js";
+} from "./utils.js";
 
 // Initialize authentication related elements and events
 export function initAuth() {
@@ -65,7 +65,7 @@ function handleSignIn(e) {
 
     // Add delay before redirecting
     setTimeout(() => {
-      window.location.href = "/sweet-treats-master/index.html";
+      window.location.href = "../index.html";
     }, 2000); // Delay for 2 seconds
   } else {
     showMessage(
@@ -147,7 +147,7 @@ function handleSignUp(e) {
 
   showMessage("Đăng ký thành công! Vui lòng đăng nhập.", "success");
   setTimeout(() => {
-    window.location.href = "/sweet-treats-master/pages/sign-in.html";
+    window.location.href = "../pages/sign-in.html";
   }, 2000);
 }
 
@@ -182,7 +182,7 @@ export function logout() {
   localStorage.removeItem("isLoggedIn");
   localStorage.removeItem("currentUser");
   localStorage.removeItem("rememberMe");
-  window.location.href = "/sweet-treats-master/index.html";
+  window.location.href = "../index.html";
 }
 
 // Check login status and update UI accordingly

@@ -1,5 +1,5 @@
 // Import necessary functions from other modules
-import { getCurrentUser } from "/sweet-treats-master/scripts/auth.js";
+import { getCurrentUser } from "./auth.js";
 
 // Define navigation items
 const navItems = {
@@ -22,7 +22,7 @@ const navItems = {
       text: "Chào, {username}",
       class: "welcome-message dropdown",
       dropdown: [
-        { href: "/sweet-treats-master/pages/me.html", text: "Trang cá nhân" },
+        { href: "/pages/me.html", text: "Trang cá nhân" },
         { href: "#", text: "Đăng xuất", onClick: "logout()" },
       ],
     },
