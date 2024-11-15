@@ -1,5 +1,5 @@
-import { formatCurrency } from "/sweet-treats-master/scripts/utils.js";
-import { CartStatus } from "/sweet-treats-master/scripts/shop.js";
+import { formatCurrency } from "./utils.js";
+import { CartStatus } from "./shop.js";
 
 let cart = [];
 let products = [];
@@ -242,7 +242,7 @@ function handleShippingSubmit(event) {
   event.target.reset();
 
   renderCart();
-  alert("Order placed successfully!");
+  alert("Đặt hàng thành công");
 }
 
 function calculateTotal(items) {
@@ -324,7 +324,7 @@ function validateShippingForm(form) {
   });
 
   if (!isValid) {
-    alert("Please fill in all required fields correctly");
+    alert("Vui lòng điền chính xác tất cả các trường bắt buộc");
   }
 
   return isValid;
