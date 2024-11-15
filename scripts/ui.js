@@ -22,7 +22,7 @@ const navItems = {
       text: "Chào, {username}",
       class: "welcome-message dropdown",
       dropdown: [
-        { href: "/pages/me.html", text: "Trang cá nhân" },
+        { href: "/sweet-treats-master/pages/me.html", text: "Trang cá nhân" },
         { href: "#", text: "Đăng xuất", onClick: "logout()" },
       ],
     },

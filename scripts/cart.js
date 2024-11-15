@@ -1,5 +1,5 @@
-import { formatCurrency } from "./utils.js";
-import { CartStatus } from "./shop.js";
+import { formatCurrency } from "/sweet-treats-master/scripts/utils.js";
+import { CartStatus } from "/sweet-treats-master/scripts/shop.js";
 
 let cart = [];
 let products = [];
