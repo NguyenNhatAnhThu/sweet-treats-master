@@ -1,5 +1,5 @@
 // Import necessary functions from other modules
-import { getCurrentUser } from "./auth.js";
+import { getCurrentUser } from "/sweet-treats-master/scripts/auth.js";
 
 // Define navigation items
 const navItems = {

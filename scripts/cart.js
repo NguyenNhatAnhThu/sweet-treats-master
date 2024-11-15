@@ -136,7 +136,7 @@ function handleCheckout() {
   const selectedItems = cart.filter((item) => item.selected);
 
   if (selectedItems.length === 0) {
-    alert("Please select at least one item to checkout");
+    alert("Vui lòng chọn ít nhất một món hàng để thanh toán");
     return;
   }
 
@@ -242,7 +242,7 @@ function handleShippingSubmit(event) {
   event.target.reset();
 
   renderCart();
-  alert("Order placed successfully!");
+  alert("Đặt hàng thành công!");
 }
 
 function calculateTotal(items) {
@@ -324,7 +324,7 @@ function validateShippingForm(form) {
   });
 
   if (!isValid) {
-    alert("Please fill in all required fields correctly");
+    alert("Vui lòng điền đầy đủ tất cả các trường yêu cầu một cách chính xác");
   }
 
   return isValid;

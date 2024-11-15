@@ -1,12 +1,12 @@
-@import "base.css";
-@import "components.css";
-@import "responsive.css";
+@import "/sweet-treats-master/styles/base.css";
+@import "/sweet-treats-master/styles/components.css";
+@import "/sweet-treats-master/styles/responsive.css";
 @import "/sweet-treats-master/assets/font-awesome/css/all.min.css";
 
 /* App Bar */
 .app-bar {
   background-color: var(--md-sys-color-surface);
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 4px rgba(22, 10, 10, 0.1);
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -481,4 +481,3 @@ footer {
   width: 100%;
   height: auto;
 }
-
