@@ -23,13 +23,14 @@
       .step {
         flex: 0 0 100%;
         text-align: center;
-        padding: 5px;
+        padding: 15px;
       }
 
       .step img {
-        width: 100px;
-        height: 100px;
-        margin: 10px 0;
+        width: 150px; /* Increased size */
+        height: 150px; /* Increased size */
+        margin: 15px 0;
+        object-fit: cover; /* Ensures image scales properly */
       }
 
       .step h3 {
@@ -71,12 +72,23 @@
       @media (min-width: 768px) {
         .step {
           flex: 0 0 33.3333%;
-          padding: 5px;
+          padding: 15px;
         }
 
         .step img {
-          width: 150px;
-          height: 150px;
+          width: 200px; /* Larger size for medium screens */
+          height: 200px;
+        }
+      }
+      @media (min-width: 480px) {
+        .step {
+          flex: 0 0 33.3333%;
+          padding: 15px;
+        }
+
+        .step img {
+          width: 200px; /* Larger size for medium screens */
+          height: 200px;
         }
       }
     </style>
