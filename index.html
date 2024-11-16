@@ -11,48 +11,73 @@
     <style>
       .feature-slider {
         position: relative;
-        max-width: 100%;
-        margin: auto;
+        width: 100%;
         overflow: hidden;
       }
 
       .slider-content {
         display: flex;
-        transition: transform 0.5s ease;
+        transition: transform 0.3s ease-in-out;
       }
 
       .step {
-        flex: 0 0 33.333%; /* Display 3 steps at a time */
+        flex: 0 0 100%;
         text-align: center;
-        padding: 10px;
+        padding: 5px;
       }
 
       .step img {
-        width: 100%;
-        height: auto;
+        width: 100px;
+        height: 100px;
+        margin: 10px 0;
       }
 
-      button {
+      .step h3 {
+        font-size: 1.5rem;
+        margin: 10px 0;
+      }
+
+      .step p {
+        font-size: 1rem;
+        color: #666;
+      }
+
+      /* Buttons for navigation */
+      .prev,
+      .next {
         position: absolute;
         top: 50%;
-        z-index: 100;
+        transform: translateY(-50%);
         background-color: rgba(0, 0, 0, 0.5);
         color: white;
         border: none;
-        padding: 10px;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        font-size: 1.5rem;
         cursor: pointer;
+        z-index: 1;
       }
 
       .prev {
-        left: 0;
+        left: 10px;
       }
 
       .next {
-        right: 0;
+        right: 10px;
       }
 
-      button:hover {
-        background-color: rgba(0, 0, 0, 0.7);
+      /* Responsive Design */
+      @media (min-width: 768px) {
+        .step {
+          flex: 0 0 33.3333%;
+          padding: 5px;
+        }
+
+        .step img {
+          width: 150px;
+          height: 150px;
+        }
       }
     </style>
   </head>
