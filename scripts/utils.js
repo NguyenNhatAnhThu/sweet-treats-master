@@ -8,7 +8,7 @@ export function validateEmail(email) {
 // Validate username format
 export function validateUsername(username) {
   // contain only not capitalised letters, numbers, and underscores
-  return /^[a-z0-9_]{3,16}$/.test(username);
+  return /^[a-z0-9_]{3,16}$/.test(username) && !/^\d+$/.test(username);
 }
 
 // Validate password
